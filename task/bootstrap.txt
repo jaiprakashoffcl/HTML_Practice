@@ -1,0 +1,209 @@
+🅰️ Textography (Typography)
+
+* `h1` to `h6`: Headings
+* `.display-1` to `.display-6`: Bigger headings
+* `.lead`: Lead paragraph
+* `.text-start`, `.text-center`, `.text-end`: Text alignment
+* `.text-lowercase`, `.text-uppercase`, `.text-capitalize`
+* `.fw-bold`, `.fw-normal`, `.fw-light`: Font weight
+* `.fst-italic`, `.fst-normal`: Font style
+
+
+
+🎨 Colors
+
+* Text colors: `.text-primary`, `.text-secondary`, `.text-success`, `.text-danger`, `.text-warning`, `.text-info`, `.text-light`, `.text-dark`, `.text-muted`, `.text-white`
+* Backgrounds: `.bg-primary`, `.bg-success`, etc.
+* `.bg-gradient`: Gradient background
+
+
+
+ 📱 Breakpoints
+
+* `sm` = ≥576px
+* `md` = ≥768px
+* `lg` = ≥992px
+* `xl` = ≥1200px
+* `xxl` = ≥1400px
+  Example: `.d-none d-md-block` (Hide in small, show in medium and above)
+
+
+
+ 📦 Container
+
+* `.container` – Fixed width
+* `.container-fluid` – Full width
+* `.container-{breakpoint}` – Responsive container
+
+
+
+ 🏷️ Class & Grid
+
+ Grid System:
+
+* `.row`, `.col`, `.col-6`, `.col-md-4`, etc.
+* Nesting: `.row > .col > .row > .col`
+
+ Grid Alignment:
+
+* `.align-items-start|center|end`
+* `.justify-content-start|center|end|between|around`
+
+
+
+ 🖼️ Images
+
+* `.img-fluid`: Responsive image
+* `.rounded`, `.rounded-circle`, `.img-thumbnail`
+
+
+ 🧱 Z-Index
+
+* `.z-0`, `.z-1`, `.z-2`, `.z-3` (Higher value = front)
+
+
+
+📊 Tables
+
+* `.table`, `.table-striped`, `.table-bordered`, `.table-hover`, `.table-dark`, `.table-responsive`
+
+
+
+ 📋 Form
+
+* `.form-control`: Input field
+* `.form-label`: Labels
+* `.form-check`, `.form-check-input`, `.form-check-label`
+* `.form-select`: Dropdown/select
+* `.form-floating`: Floating labels
+
+
+
+✅ Select / Checkbox
+
+* `<select class="form-select">`
+* Checkbox:
+
+
+<div class="form-check">
+  <input type="checkbox" class="form-check-input">
+  <label class="form-check-label">Option</label>
+</div>
+
+
+
+ 🏷️ Floating Label
+
+
+<div class="form-floating">
+  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+
+
+
+
+ ⚠️ Alert
+
+* `.alert`, `.alert-success`, `.alert-danger`, `.alert-warning`, `.alert-info`, `.alert-dismissible`, `.fade`, `.show`
+
+
+
+ 🎖️ Badge
+
+* `<span class="badge bg-primary">New</span>`
+* `.rounded-pill` – pill shape
+
+
+
+ 🔘 Button
+
+* `.btn`, `.btn-primary`, `.btn-outline-success`, `.btn-lg`, `.btn-sm`, `.disabled`
+
+ 💳 Card
+
+
+<div class="card">
+  <img src="..." class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">Title</h5>
+    <p class="card-text">Text</p>
+  </div>
+</div>
+
+
+
+
+ 🎠 Carousel
+
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">...</div>
+    <div class="carousel-item">...</div>
+  </div>
+</div>
+
+
+
+ 💬 Modal
+
+
+<button data-bs-toggle="modal" data-bs-target="#myModal">Launch</button>
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">...</div>
+  </div>
+</div>
+
+
+ 🧭 Navbar
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Brand</a>
+</nav>
+
+
+
+🌈 Background
+
+* `.bg-primary`, `.bg-success`, etc.
+* `.bg-light`, `.bg-dark`, `.bg-transparent`
+
+ 📏 Border
+
+* `.border`, `.border-0`, `.border-top`, `.border-bottom`
+* `.rounded`, `.rounded-circle`, `.rounded-pill`
+
+
+
+🛠️ Utilities
+
+* Width/Height: `.w-25`, `.h-50`, etc.
+* Text: `.text-truncate`, `.text-wrap`
+* Visibility: `.visible`, `.invisible`
+
+📦 Flex
+
+* `.d-flex`, `.justify-content-*`, `.align-items-*`
+* `.flex-row`, `.flex-column`, `.flex-wrap`
+
+🖥️ Display
+
+* `.d-none`, `.d-block`, `.d-flex`, `.d-inline`, `.d-grid`
+
+
+
+ 📌 Position
+
+* `.position-static`, `.position-relative`, `.position-absolute`, `.position-fixed`, `.top-0`, `.start-50`, `.translate-middle`
+
+🕶️ Shadows
+
+* `.shadow-none`, `.shadow-sm`, `.shadow`, `.shadow-lg`
+
+ 📏 **Spacing (Margin & Padding)
+
+* Margin: `.m-1` to `.m-5`, `.mt-2`, `.mx-auto`, `.mb-0`
+* Padding: `.p-1` to `.p-5`, `.py-2`, `.px-3`

@@ -1,0 +1,13 @@
+.background-bg {
+
+    width: 10%;
+    background-color: aqua;
+    color: black;
+    padding: 30px;
+    border: 10%;
+    margin: 2%;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 2%;
+
+}

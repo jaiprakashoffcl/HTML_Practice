@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+   <center>
+    <h1>Join the Adventure</h1>
+     <h2>Create your account and unlock incredible journeys — 
+        from fantasy realms to real-world wonders like Singapore!</h2>
+        <img src="images/singapore-register.jpg" alt="singapore-homepage" width="600">
+        <br/> <br/>
+        <form action="login.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" placeholder="Enter First Name" minlength="6" maxlength="30" required>
+            <br/><br/>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" placeholder="Enter Last Name" minlength="6" maxlength="20" required>
+            <br/><br/>
+
+            <label for="email">Email Address:</label>
+            <input type="email" placeholder="example@mail.com" required>
+            <br/><br/>
+
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Atleast 8 characters" minlength="8" maxlength="25" required>
+            <br/><br/>
+
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" placeholder="confirm password" minlength="8" maxlength="25" required>
+            <br/><br/>
+
+            <label for="DoB">Date of Birth:</label>
+            <input type="date" required>
+            <br/><br/>
+
+            Gender:
+            <label for="male">Male</label>
+            <input type="radio" name="male">
+            <label for="female">Female</label>
+            <input type="radio" name="female">
+            <br/><br/>
+
+            <label for="age">Age:</label>
+            <input type="number" min="18" max="50" required>
+            <br/><br/>
+
+            <label for="Phone">Phone:</label>
+            <input type="tel" placeholder="1234567890" max="10" required>
+            <br/><br/>
+
+            </fieldset>
+
+             <fieldset>
+                <legend>Travel & Visa Details</legend>
+
+
+            <label for="url">Visa Process link:</label>
+            <input type="url" placeholder="www.ica.gov.sg" required>
+            <br><br>
+
+
+            <label for="selectcountry">Select Country:</label>
+            <select name="country" id="" required>
+                <option value="" selected disabled>--Select Country--</option>
+                <option value="ind">India</option>
+                <option value="sg">Singapore</option>
+                <option value="kul">Malaysia</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+            <br><br>
+
+            <label for="language">Preferred Language:</label>
+            <select name="language" id="language">
+            <option value="" selected disabled>--Select Language--</option>
+            <optgroup label="Asian Languages">
+                <option value="tamil">Tamil</option>
+                <option value="hindi">Hindi</option>
+                <option value="chinese">Chinese</option>
+            </optgroup>
+            <optgroup label="European Languages">
+                <option value="english">English</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+            </optgroup>
+        </select>
+        <br/><br/>
+        </fieldset>
+        <br>
+
+            <input type="submit" name="submit" value="Register" />
+            <input type="reset" name="reset" value="Reset" />
+        </form>
+   </center>
+</body>
+</html>

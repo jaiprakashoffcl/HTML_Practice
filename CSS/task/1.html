@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Tasks – Block, Inline, Inline-Block</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #ccc;
+    }
+    .card {
+      width: 32%;
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 5px;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+    .gallery img {
+      display: inline-block;
+      margin: 5px;
+      border: 2px solid #000;
+    }
+    .nav li {
+      display: inline-block;
+      margin: 10px;
+      padding: 5px 10px;
+      background: #ccc;
+    }
+    .buttons button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML/CSS Display Tasks</h1>
+
+  <!-- 1. Block Level Elements Alignment -->
+  <h2>1. Block Level Elements</h2>
+  <div style="background: red; display: block;">Red Block</div>
+  <div style="background: blue; display: block;">Blue Block</div>
+  <br>
+  <div style="background: red; display: inline;">Red Inline</div>
+  <div style="background: blue; display: block;">Blue Block</div>
+
+  <!-- 2. Inline Elements Styling -->
+  <h2>2. Inline Elements Styling</h2>
+  <p>
+    <span style="display: inline; background: yellow;">Inline Span 1</span>
+    <span style="display: inline; background: green; width: 100px; height: 50px;">
+      Inline Span 2 (No Width/Height Effect)
+    </span>
+  </p>
+
+  <!-- 3. Inline to Block Conversion -->
+  <h2>3. Anchor Inline to Block</h2>
+  <a href="#" style="display: block; width: 200px; height: 50px; background: #ddd; text-align: center; line-height: 50px;">
+    Click Me
+  </a>
+
+  <!-- 4. Inline-Block Navigation Menu -->
+  <h2>4. Inline-Block Nav Menu</h2>
+  <ul class="nav" style="list-style: none; padding: 0;">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+
+  <!-- 5. Image & Text Inline-Block -->
+  <h2>5. Image & Text Side-by-Side</h2>
+  <div>
+    <img src="https://via.placeholder.com/100" style="display: inline-block; vertical-align: middle;" />
+    <p style="display: inline-block; vertical-align: middle;">This is a paragraph aligned with the image.</p>
+  </div>
+
+  <!-- 6. Block Center Alignment -->
+  <h2>6. Center Aligned Block</h2>
+  <div style="width: 300px; height: 200px; background: #e3e3e3; margin: auto;"></div>
+
+  <!-- 7. Button Inline Arrangement -->
+  <h2>7. Button Inline vs Inline-Block</h2>
+  <div class="buttons">
+    <button style="display: inline;">Button 1</button>
+    <button style="display: inline;">Button 2</button>
+    <button style="display: inline-block;">Button 3 (inline-block)</button>
+  </div>
+
+  <!-- 8. Card Layout using Inline-Block -->
+  <h2>8. Inline-Block Cards</h2>
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+
+  <!-- 9. Block vs Inline Form Elements -->
+  <h2>9. Block vs Inline Form Elements</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" />
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" style="display: block;" />
+  </form>
+
+  <!-- 10. Inline-Block Image Gallery -->
+  <h2>10. Inline-Block Image Gallery</h2>
+  <div class="gallery" style="font-size: 0;">
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+    <img src="https://via.placeholder.com/100" />
+  </div>
+
+</body>
+</html>

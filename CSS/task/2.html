@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Tasks</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 30px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .box {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Box Model Tasks</h1>
+
+  <!-- Task 1 -->
+  <section>
+    <h2>1. Basic Box with Border</h2>
+    <div class="box" style="width: 200px; height: 100px; border: 5px solid red; padding: 20px;">
+      Box with padding and border. Adjust padding to see size change.
+    </div>
+  </section>
+
+  <!-- Task 2 -->
+  <section>
+    <h2>2. Margin Experiment (Vertical Margin Collapse)</h2>
+    <div class="box" style="height: 100px; background: lightblue;">Box 1</div>
+    <div class="box" style="height: 100px; background: lightgreen; margin-top: 30px;">
+      Box 2 with top margin
+    </div>
+    <p><em>Notice that the top margin of Box 2 collapses with bottom margin of Box 1 if any.</em></p>
+  </section>
+
+  <!-- Task 3 -->
+  <section>
+    <h2>3. Padding Effect</h2>
+    <div class="box" style="padding: 20px; border: 2px solid black; width: 300px;">
+      The text inside this box is pushed away from the border using padding.
+    </div>
+  </section>
+
+  <!-- Task 4 -->
+  <section>
+    <h2>4. Different Padding on Each Side</h2>
+    <div class="box" style="
+      border: 2px solid black;
+      width: 300px;
+      padding-top: 10px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 5px;">
+      This box has different padding on each side.
+    </div>
+  </section>
+
+  <!-- Task 5 -->
+  <section>
+    <h2>5. Border Styles</h2>
+    <div class="box" style="border: 2px solid black; padding: 10px;">Solid Border</div>
+    <div class="box" style="border: 2px dotted black; padding: 10px;">Dotted Border</div>
+    <div class="box" style="border: 2px dashed black; padding: 10px;">Dashed Border</div>
+    <div class="box" style="border: 4px double black; padding: 10px;">Double Border</div>
+  </section>
+
+  <!-- Task 6 -->
+  <section>
+    <h2>6. Box Sizing: border-box vs content-box</h2>
+    <p><strong>Without box-sizing (default content-box):</strong></p>
+    <div class="box" style="width: 200px; padding: 20px; border: 10px solid black; background: lightcoral;">
+      Total width exceeds 200px due to padding + border
+    </div>
+
+    <p><strong>With box-sizing: border-box:</strong></p>
+    <div class="box" style="width: 200px; padding: 20px; border: 10px solid black; background: lightblue; box-sizing: border-box;">
+      Total width remains 200px including padding + border
+    </div>
+  </section>
+
+  <!-- Task 7 -->
+  <section>
+    <h2>7. Nested Box Model</h2>
+    <div class="box" style="padding: 20px; margin: 20px; border: 2px solid blue;">
+      Outer Box
+      <div style="padding: 10px; margin: 10px; border: 2px solid red;">
+        Inner Box
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 8 -->
+  <section>
+    <h2>8. Circle Box</h2>
+    <div class="box" style="width: 200px; height: 200px; border: 5px solid black; border-radius: 50%; background: pink; padding: 20px;">
+      Circle Box using border-radius: 50%
+    </div>
+  </section>
+
+  <!-- Task 9 -->
+  <section>
+    <h2>9. Shadow & Box Model</h2>
+    <div class="box" style="width: 300px; padding: 20px; margin: 30px; border: 1px solid #ccc; box-shadow: 5px 5px 15px rgba(0,0,0,0.3);">
+      This card uses a soft box-shadow. Adjust margin/padding to change how far it floats visually.
+    </div>
+  </section>
+
+  <!-- Task 10 -->
+  <section>
+    <h2>10. Inline-Block + Box Model</h2>
+    <p>Notice the space between boxes due to inline-block behavior.</p>
+    <div style="display: inline-block; border: 1px solid black; padding: 10px; margin: 5px;">Box 1</div>
+    <div style="display: inline-block; border: 1px solid black; padding: 10px; margin: 5px;">Box 2</div>
+  </section>
+
+</body>
+</html>

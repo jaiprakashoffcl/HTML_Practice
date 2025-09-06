@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-me-section{
+    padding: 50px 20px;
+    background-color: #eef3f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-me-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-me-heading{
+    flex: 1 1 30%;
+    padding: 20px;
+}
+
+.about-me-heading h2 {
+  font-size: 28px;
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
+  color: #333;
+}
+
+.about-me-content {
+  flex: 1 1 70%;
+  padding: 20px;
+}
+
+.about-me-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.skills-known {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.skills-known h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.skill img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.skill img:hover {
+  transform: scale(1.1);
+}
+
+.skill span {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #444;
+}

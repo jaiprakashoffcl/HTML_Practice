@@ -4,23 +4,23 @@
   box-sizing: border-box;
 }
 
-.about-me-section{
-    padding: 50px 20px;
-    background-color: #eef3f8;
-    font-family: Arial, Helvetica, sans-serif;
+.about-me-section {
+  padding: 50px 20px;
+  background-color: #eef3f8;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-me-container{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
-    align-items: center;
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
 }
 
-.about-me-heading{
-    flex: 1 1 30%;
-    padding: 20px;
+.about-me-heading {
+  flex: 1 1 30%;
+  padding: 20px;
 }
 
 .about-me-heading h2 {
@@ -41,23 +41,41 @@
   color: #555;
 }
 
+
 .skills-known {
-  padding: 40px 20px;
-  background-color: #f8f9fa;
-  text-align: center;
+  padding: 50px 20px;  
+  background-color: #eef3f8;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
-.skills-known h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.skills-known-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;  
+}
+
+.skills-known-heading {
+  flex: 1 1 30%;
+  padding: 20px;
+}
+
+.skills-known-heading h2 {
+  font-size: 28px;
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
   color: #333;
+  margin: 0;
 }
 
 .skill-icons {
+  flex: 1 1 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
+  padding: 20px;
 }
 
 .skill {
@@ -81,4 +99,19 @@
   margin-top: 5px;
   font-size: 12px;
   color: #444;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

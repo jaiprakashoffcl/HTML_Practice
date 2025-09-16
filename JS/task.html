@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Price Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    li {
+      margin: 5px 0;
+    }
+    #total {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Product Price Calculator</h1>
+
+  <button onclick="startAdding()">Start Adding Products</button>
+
+  <ul id="productList"></ul>
+
+  <div id="total"></div>
+
+  <script>
+    function startAdding() {
+      let totalPrice = 0;
+      let continueAdding = true;
+
+      while (continueAdding) {
+        let name = prompt("Enter product name:");
+        if (!name) {
+          alert("Product name is required.");
+          continue;
+        }
+
+        let priceInput = prompt("Enter price for " + name + ":");
+        let price = parseFloat(priceInput);
+
+        if (isNaN(price)) {
+          alert("Invalid price. Please enter a number.");
+          continue;
+        }
+
+        totalPrice += price;
+
+  
+        const li = document.createElement("li");
+        li.textContent = `${name} - ${price}`;
+        document.getElementById("productList").appendChild(li);
+
+
+        let more = prompt("Do you want to add more products? (yes/no):");
+        if (!more || more.toLowerCase() !== "yes") {
+          continueAdding = false;
+        }
+      }
+
+
+      document.getElementById("total").textContent = `Total Price: ₹${totalPrice}`;
+    }
+  </script>
+
+</body>
+</html>

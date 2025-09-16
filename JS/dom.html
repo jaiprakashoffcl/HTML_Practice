@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+            color: #333;
+        }
+
+        #main-heading {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: none;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .list-items {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+        }
+
+        .list-items:hover {
+            background-color: #e3f2fd;
+            transform: scale(1.03);
+        }6
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 id="main-heading">IT Companies</h1>
+    <ul>
+        <li class="list-items">Cognizant</li>
+        <li class="list-items">Zoho</li>
+        <li class="list-items">NetFlix</li>
+        <li class="list-items">Google</li>
+        <li class="list-items">Amazon</li>
+    </ul>
+    </div>
+
+    <script>
+    const title = document.getElementById('main-heading');
+    console.log(title);
+
+    const title1 = document.getElementsByClassName('list-items');
+    console.log(title1);
+
+    const title2 = document.getElementsByTagName('li');
+    console.log(title2);
+
+    const title3 = document.querySelector('div');
+    console.log(title3);
+</script>
+
+</body>
+</html>

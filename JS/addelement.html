@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>original content</h1>
+
+    <script>
+        let newpara = document.createElement("p");
+        newpara.textContent = "This is a new paragraph added with JavaScript.";
+        newpara.style.backgroundColor = "blue";
+        newpara.style.padding = "10px";
+        newpara.style.marginTop = "1px solid #000"
+        document.body.appendChild(newpara);
+    </script>
+</body>
+</html>

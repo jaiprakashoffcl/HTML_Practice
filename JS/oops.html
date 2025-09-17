@@ -8,13 +8,28 @@
 <body>
     <script>
         class Student {
-            constructor (id,name,city)
+            constructor (id,name,city,email)
             {
                 this.id = id
-                this.city = city
                 this.name = name
+                this.city = city
+                this.email=email
+            }
+            display()
+            {
+                document.write('my std id :' + ' '+ this.id +'my std name:'+' '+this.name+'std city:'+' '+this.name+'std email'+' '+this.email)
             }
         }
+
+        var obj1 = new Student(12,"niveditha","chennai","nivi@gmail.com")
+        var obj2 = new Student(15,"sakthi","coimbatore","sakthi@gmail.com")
+        var obj3 = new Student(16,"vijay","trichy","vijay2004@gmail.com")
+        var obj4 = new Student(18,"nikil","chennai","nikil468@gmail.com")
+
+        obj1.display()
+        obj2.display()
+        obj3.display()
+        obj4.display()
     </script>
 </body>
 </html>
